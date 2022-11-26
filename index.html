@@ -4,29 +4,46 @@
 <head>
     <title>ADA projects</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-
+    <script type="text/javascript" src="BaseFunctions.js"></script>
 </head>
 
 
-<body>
-    <div id="header"> </div>
-
-    <div id="menu">
-        <ul>
-            <li><a href="index.html">Ada</a> </li>
-            <li> <a href="project.html">Hour of Code event</a> </li>
-            <li> <a href="team.html">Our team members</a> </li>
-            <li> <a href="team.html">Website project</a> </li>
-        </ul>
+<body onload="Ada()">
+    <div id="header" style="text-align: center;">
+        <img src="Media/ada_logo_color.png" alt="" style="height: 100px;margin: 5px;">
     </div>
 
-    <div id="body">
-        soon..
+    <div id="box">
+        <video id="bgVideo" controls preload="true" autoplay loop muted>
+            <source src="Media/ada.mp4" type="video/mp4" >
+        </video> 
+        <div id="menu">
+            <ul>
+                <li> <a onclick="Ada()">ADA</a> </li>
+                <li> <a onclick="CodeEvent()">HOUR OF CODE EVENT</a> </li>
+                <li> <a onclick="Team()">OUR TEAM MEMBERS</a> </li>
+                <li> <a onclick="Project()">WEBSITE PROJECT</a> </li>
+            </ul>
+        </div>
+
+        <div class="Ada" id="Ada">
+            Ada olan content
+        </div>
+        <div class="CodeEvent" id="CodeEvent">
+            Event olan content
+        </div>
+        <div class="Team" id="Team">
+            Team olan content
+        </div>
+        <div class="Project" id="Project">
+            Project olan content
+        </div>
+
+        <div id="footer">
+            <p> This place is for footer..</p>
+        </div>
     </div>
 
-    <div id="footer">
-        <p> A computer is a digital electronic machine that c</p>
-    </div>
 
 
 </body>
